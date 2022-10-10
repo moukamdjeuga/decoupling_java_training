@@ -1,46 +1,55 @@
 package fr.lernejo.guessgame;
 
-import fr.lernejo.logger.LoggerFactory;
 import fr.lernejo.logger.Logger;
+import fr.lernejo.logger.LoggerFactory;
 
 public class Simulation {
 
     private final Logger logger = LoggerFactory.getLogger("simulation");
-    private final Player player;  //TODO add variable type
-    private long numberToGuess; //TODO add variable type
+    private final Player player;
+    private int numberToGuess;
+    private long startTime;
+    private long endTime;
 
     public Simulation(Player player) {
-        this .player = player;
-        //TODO implement me
+        this.player = player;
     }
-
-    public void initialize(long numberToGuess) {
-        //TODO implement me
+    
+    public void initialize(int numberToGuess) {
         this.numberToGuess = numberToGuess;
     }
-
+    
     /**
      * @return true if the player have guessed the right number
      */
     private boolean nextRound() {
-        //TODO implement me
-        long numberPlayer = player.askNextGuess();
-        System.out.println(numberToGuess);
-        if(this.numberToGuess == numberPlayer){
-            logger.log("nombre juste !");
-            return  true;
+        
+        long guess = player.askNextGuess();
+        if (guess == numberToGuess) {
+            logger.log("Bravo you win :)");
+            return true;
         }
-        player.respond(numberPlayer > this.numberToGuess);
+        player.respond(guess < numberToGuess);
         return false;
     }
+    
+    public void loopUntilPlayerSucceed( long maxIteration) {
 
+        startTime = System.currentTimeMillis();
+        while (!nextRound() && maxIteration > 0) {
+            maxIteration--;
+        }
+        
+        if (maxIteration == 0 ) {
+            logger.log("You didn't find the number");
+        }
 
-    public void loopUntilPlayerSucceed() {
-        while (!nextRound()){
-            nextRound();
-        //TODO implement me
+        endTime = System.currentTimeMillis();
+        long time = endTime - startTime;
+        long minutes = time / 60000;
+        long seconds = (time % 60000) / 1000;
+        long milliseconds = time % 1000;
+        System.out.println("time = " + minutes + ":" + seconds + "." + milliseconds);
     }
-}
 
-
-}
+  }

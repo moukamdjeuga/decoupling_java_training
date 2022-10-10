@@ -5,12 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5dab85d4-70d1-4939-afaa-17f1727d44bc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/lernejo/guessgame/ComputerPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/lernejo/guessgame/Launcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/lernejo/logger/CompositeLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/lernejo/logger/ComputerPlayerLogTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/lernejo/logger/ContextualLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/lernejo/logger/FileLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/lernejo/logger/FilteredLogger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/lernejo/guessgame/HumanPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/lernejo/guessgame/HumanPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/lernejo/guessgame/Laucher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/lernejo/guessgame/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/lernejo/guessgame/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/lernejo/guessgame/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/lernejo/guessgame/Simulation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/lernejo/logger/ConsoleLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/lernejo/logger/ConsoleLogger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/lernejo/logger/LoggerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/lernejo/logger/LoggerFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/lernejo/logger/logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/lernejo/logger/Logger.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +69,22 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="Laucher" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="fr.lernejo.guessgame.Laucher" />
+      <module name="decoupling_java_training" />
+      <option name="PROGRAM_PARAMETERS" value="-interactive -auto" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.lernejo.guessgame.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -72,7 +96,7 @@
       <workItem from="1665142684431" duration="3244000" />
       <workItem from="1665146971432" duration="3134000" />
       <workItem from="1665383269242" duration="11288000" />
-      <workItem from="1665414010746" duration="1973000" />
+      <workItem from="1665414010746" duration="8532000" />
     </task>
     <servers />
   </component>
