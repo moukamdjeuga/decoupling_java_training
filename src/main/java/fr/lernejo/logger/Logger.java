@@ -1,5 +1,5 @@
 package fr.lernejo.logger;
 
-public interface logger {
+public interface Logger {
     void log(String message);
 }
